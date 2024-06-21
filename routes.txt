@@ -1,0 +1,78 @@
+Product Operations:
+
+GET /products
+Retrieve all products available in the supermarket.
+
+GET /products/{product_id}
+Retrieve details of a specific product by its ID.
+
+POST /products
+Add a new product to the supermarket's inventory.
+
+PUT /products/{product_id}
+Update details of an existing product.
+
+DELETE /products/{product_id}
+Delete a product from the inventory.
+
+GET /products/search?q={query}
+Search for products based on a keyword or phrase.
+
+Customer Operations:
+
+GET /customers
+Retrieve a list of all customers.
+
+GET /customers/{customer_id}
+Retrieve details of a specific customer by their ID.
+
+POST /customers
+Add a new customer to the system.
+
+PUT /customers/{customer_id}
+Update details of an existing customer.
+
+DELETE /customers/{customer_id}
+Delete a customer from the system.
+
+Sales Operations:
+
+GET /sales
+Retrieve a list of all sales transactions.
+
+GET /sales/{sale_id}
+Retrieve details of a specific sale by its ID.
+
+POST /sales
+Create a new sales transaction (checkout).
+
+POST /sales/{sale_id}/refund
+Initiate a refund for a specific sale.
+
+GET /customers/{customer_id}/sales
+Retrieve all sales transactions associated with a specific customer.
+
+Inventory Operations:
+
+GET /inventory
+Retrieve a list of all products in inventory with their current stock levels.
+
+GET /inventory/{product_id}
+Retrieve inventory details (stock level) for a specific product.
+
+POST /inventory/{product_id}/adjust
+Adjust the stock quantity of a specific product (e.g., for restocking or corrections).
+
+POST /inventory/{product_id}/order
+Place an order for restocking a specific product.
+
+Reports and Analytics:
+
+GET /reports/sales
+Generate a report of sales transactions within a specified date range.
+
+GET /reports/top-selling-products
+Retrieve a list of top-selling products based on sales volume.
+
+GET /reports/customer-purchase-history/{customer_id}
+Retrieve the purchase history of a specific customer.
